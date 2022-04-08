@@ -12,6 +12,7 @@
   margin-left: 0px;
   margin-right: 0px;
   height: 100vh;
+  width: 100%;
   grid-template-columns: 0.1fr 1.3fr 1fr 1.1fr 0.1fr;
   grid-template-rows: 0.4fr 1.6fr 2fr 2fr 0.2fr 0.2fr;
   gap: 10px 0px;
@@ -68,9 +69,8 @@
   grid-area: navBar;
   position: sticky; /* Por que no funciona el sticky?*/
   z-index: 1;
-  margin-top: 10px;
   background-color: #fce803;
-  border-radius: 20px;
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -168,6 +168,10 @@ li {
   
 }
 
+li:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 480px) {
   li {
     list-style-type: none;
@@ -238,9 +242,9 @@ li {
 
 .modelosDestacados {  
   display: grid;
-  background-color: #7070705b;
+  background: rgb(82,81,81);
+  background: linear-gradient(180deg, rgba(82,81,81,0.8435749299719888) 0%, rgba(0,0,0,1) 90%);
   border-radius: 20px;
-  border: #525251 solid 5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.1fr 1.9fr;
   gap: 0px 0px;
@@ -355,7 +359,6 @@ li {
   height: 90%;
   align-items: center;
   justify-items: center;
-  border: solid 3px #fce803 ;
   background-color: #52525179;
 }
 
@@ -368,7 +371,6 @@ li {
     border-radius: 20px;
     margin: 5px;
     height: 90%; 
-    border: solid 3px #fce803 ;
     background-color: #52525179;
   }
 
@@ -381,7 +383,6 @@ li {
   height: 90%;
   align-items: center;
   justify-items: center;
-  border: solid 3px #fce803 ;
   background-color: #52525179;
 }
 
@@ -394,7 +395,6 @@ li {
     border-radius: 20px;
     margin: 5px;
     height: 100%; 
-    border: solid 3px #fce803 ;
     background-color: #52525179;
   }
 
@@ -408,7 +408,6 @@ li {
   height: 90%;
   align-items: center;
   justify-items: center;
-  border: solid 3px #fce803 ;
   background-color: #52525179;
 
 }
@@ -429,7 +428,6 @@ li {
   height: 90%;
   align-items: center;
   justify-items: center;
-  border: solid 3px #fce803 ;
   background-color: #52525179;
 
 }
@@ -443,10 +441,13 @@ li {
 }
 
 .modelosDestacados__modelos {
-    font-family: 'Mukta';
-    font-weight: 600;
-    font-size: 15px;
-    text-align: center
+  font-family: 'Mukta';
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+    
+
   }
 
 .modelosDestacadosImg {
@@ -469,9 +470,8 @@ li {
   grid-area: blog;
   height: 100%;
   margin-top: 10px;
-  background-color: #7070705b;
+  background: linear-gradient(180deg, rgba(82,81,81,0.8435749299719888) 0%, rgba(0,0,0,1) 90%);
   padding-top: 5px;
-  border: #525251 solid 5px;
   border-radius: 20px;
   justify-content: stretch;
   align-content: stretch;
@@ -490,7 +490,7 @@ li {
     grid-area: blog;
     height: 100%;
     margin-top: 10px;
-    background-color: #7070705b;
+    background: linear-gradient(180deg, rgba(82,81,81,0.8435749299719888) 0%, rgba(0,0,0,1) 90%);;
     padding-top: 5px;
     border-radius: 20px;
     border: #00000000;
@@ -567,13 +567,12 @@ li {
   grid-template-areas:
     "img1 blogText1";
   display: grid;
-  border: solid 3px #fce803 ; 
   border-radius: 20px; 
   height: 95%;
   align-items: center;
   align-content: center;
   margin: 10px;
-  background-color: #52525179;
+  background: linear-gradient(180deg, rgba(82,81,81,0.8435749299719888) 0%, rgba(0,0,0,1) 90%);
 }
 
 .blogText1 {
@@ -622,13 +621,12 @@ align-content: center;
   grid-template-areas:
     "img2 blogText2";
   display: grid;
-  border: 3px #fce803 solid;
   border-radius: 20px; 
   height: 95%;
   align-items: center;
   align-content: center;
   margin: 10px;
-  background-color: #52525179;
+  background: linear-gradient(180deg, rgba(82,81,81,0.8435749299719888) 0%, rgba(0,0,0,1) 90%);
 }
 
 .blogText2 {
@@ -683,6 +681,7 @@ align-content: center;
     margin: 5px;
     height: 70%;
     line-height: 100%;
+    color: #8d8d8d;
 }
 
 .regularText { /*reutilizable cada vez que haya textos en las páginas*/
@@ -704,7 +703,7 @@ align-content: center;
 .irArriba { 
   display: grid;
   grid-area: irArriba; 
-  width: 100%;
+  width: 10%;
   margin-top: 20px;
   justify-items: left;
   justify-content: left;
@@ -742,7 +741,6 @@ align-content: center;
   grid-area: footer; 
   display: grid;
   background-color: black;
-  border-radius: 20px;
   margin-bottom: 5px;
   padding-left: 20px;
 }
@@ -767,6 +765,7 @@ align-content: center;
   font-weight: 200;
   color: #fce803;
   font-weight: bold;
+  width: 95%;
 
 }
 
@@ -777,6 +776,7 @@ align-content: center;
   font-size: 15px;
   font-family: 'Mukta';
   font-weight: 200;
+  width: 95%;
 
 
 }
@@ -788,6 +788,7 @@ align-content: center;
   font-size: 15px;
   font-family: 'Mukta';
   font-weight: 200;
+  width: 95%;
   
 
 }
@@ -828,7 +829,7 @@ align-content: center;
       "footer";
       height: 100%;
       width: 100%;
-  
+    background-image: display:none;
   }
 
 }
@@ -846,9 +847,8 @@ align-content: center;
   grid-area: categorias;
   height: 94%;
   margin-top: 10px;
-  background-color: #7070705b;
+  background: linear-gradient(180deg, rgba(82,81,81,0.8435749299719888) 0%, rgba(0,0,0,1) 90%);
   padding-top: 1%;
-  border: #525251 solid 5px;
   border-radius: 20px;
   justify-content: stretch;
   align-content: stretch;
@@ -870,9 +870,8 @@ align-content: center;
     height: 94%;
     width: 100%;
     margin-top: 10px;
-    background-color: #7070705b;
+    background: linear-gradient(180deg, rgba(82,81,81,0.8435749299719888) 0%, rgba(0,0,0,1) 90%);
     padding-top: 1%;
-    border: #525251 solid 0px;
     border-radius: 20px;
     justify-content: stretch;
     align-content: stretch;
@@ -890,12 +889,12 @@ align-content: center;
     "tituloCategorias descripcionCategorias";
   grid-area: headCategorias;
   background-color: #fce803;
-  border-radius: 20px;
   width: 45%;
   margin-left: 10px;
   align-items: center;
   align-content: center;
   height: 85%;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -914,7 +913,7 @@ align-content: center;
     margin-left: 10px;
     align-items: center;
     align-content: center;
-    height: 70%;
+    height: 90%;
   }
 
 }
@@ -968,14 +967,13 @@ align-content: center;
     "imgModelosYellow"
     "tituloModelosYellow";
   grid-area: modelosYellow;
-  border: 3px #fce803 solid;
   border-radius: 20px; 
   align-items: center;
   align-content: center;
   justify-content: center;
   justify-items: center;
   margin: 10px;
-  background-color: #52525179;
+  background: linear-gradient(180deg, rgba(82, 81, 81, 0) 0%, #1b1b1b 90%);
   height: 85%;
 
 }
@@ -1031,7 +1029,6 @@ align-content: center;
     "imgCuadros"
     "tituloCuadros";
   grid-area: cuadros;
-  border: 3px #fce803 solid;
   border-radius: 20px; 
   align-items: center;
   align-content: center;
@@ -1039,7 +1036,7 @@ align-content: center;
   justify-items: center;
   margin: 10px;
   height: 85%;
-  background-color: #52525179;
+  background: linear-gradient(180deg, rgba(82, 81, 81, 0) 0%, #1b1b1b 90%);
 }
 
 @media screen and (max-width: 480px) {
@@ -1089,14 +1086,13 @@ align-content: center;
     "imgRodados"
     "tituloRodados";
   grid-area: rodados;
-  border: 3px #fce803 solid;
   border-radius: 20px; 
   align-items: center;
   align-content: center;
   justify-content: center;
   justify-items: center;
   margin: 10px;
-  background-color: #52525179;
+  background: linear-gradient(180deg, rgba(82, 81, 81, 0) 0%, #1b1b1b 90%);
   height: 85%
 }
 
@@ -1146,14 +1142,13 @@ align-content: center;
     "imgFrenos"
     "tituloFrenos";
   grid-area: frenos;
-  border: 3px #fce803 solid;
   border-radius: 20px; 
   align-items: center;
   align-content: center;
   justify-content: center;
   justify-items: center;
   margin: 10px;
-  background-color: #52525179;
+  background: linear-gradient(180deg, rgba(82, 81, 81, 0) 0%, #1b1b1b 90%);
   height: 85%;
 }
 
@@ -1205,14 +1200,13 @@ align-content: center;
     "imgCambios"
     "tituloCambios";
   grid-area: cambios;
-  border: 3px #fce803 solid;
   border-radius: 20px; 
   align-items: center;
   align-content: center;
   justify-content: center;
   justify-items: center;
   margin: 10px;
-  background-color: #52525179;
+  background: linear-gradient(180deg, rgba(82, 81, 81, 0) 0%, #1b1b1b 90%);
   height: 85%;
 }
 
@@ -1263,14 +1257,13 @@ align-content: center;
     "imgAccesorios"
     "tituloAccesorios";
   grid-area: accesorios;
-  border: 3px #fce803 solid;
   border-radius: 20px; 
   align-items: center;
   align-content: center;
   justify-content: center;
   justify-items: center;
   margin: 10px;
-  background-color: #52525179;
+  background: linear-gradient(180deg, rgba(82, 81, 81, 0) 0%, #1b1b1b 90%);
   height: 85%
 
 }
