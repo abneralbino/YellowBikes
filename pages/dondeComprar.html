@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mukta:wght@200;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>Yellow Bikes - Dónde Comprar</title>
+    </head>
+    <body class="parallaxDondeComprar">
+        <div id="top">
+            <!--no logro hacer con que el logo sea un link a home-->
+            <a href="../index.html"><img src="../img/yellowBikesLogo.png" alt="Yellow Bikes Logo" title="Yellow Bikes Logo Home" class="logo"></a>
+            <h1>Yellow Bikes</h1>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <!--Menu horizontal, centralizado en la página-->
+                    <li><a href="../index.html">Página Principal</a></li>
+                    <li><a href="./categorias.html" target="_blank">Categorías</a></li>
+                    <li><a href="./dondeComprar.html" target="_blank">Dónde Comprar</a></li>
+                    <li><a href="./blog.html" target="_blank">Blog</a></li>
+                    <li><a href="./quienesSomos.html" target="_blank">Quiénes Somos</a></li>
+                    <li><a href="./contacto.html" target="_blank">Contacto</a></li>
+                    <form>
+                        <input type="text" placeholder="  Buscar en el sitio" class="formInput">
+                        <button class="button">Buscar</button>
+                    </form>
+                </ul>
+            </nav>
+        </div>
+        <main class="llenadoDePaginaDondeComprar"> <!--Todas las páginas van a usar esta caja de llenado, es donde van a estar los contenidos principales y así separarlos visualmente del menu superior y del footer-->
+            <div>
+                <h2>Nuestros Revendedores</h2>
+                <!--El mapa debe marcar los revendedores autorizados de productos Yellow Bike-->
+            </div>
+            <div class="iframeMaps">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1P48kFKNyV643qWCCGlad7s0oFSk9xaUM&ehbc=2E312F" width="640" height="480"></iframe>
+            </div>
+            <!--debo crear un listado al lado del mapa con las direcciones de los revendedores-->
+        </main>
+        <div>
+            <a class="irArriba" href="#top" name="Ir arriba">Ir arriba</a>
+        </div>
+        <div>
+            <footer class="footer">
+                <h4 class="footerAlign__derechos">Yellow Bikes - Todos los derechos reservados</h4>
+                <p class="footerAlign__direccion1">Santana 195 - Almagro</p>
+                <p class="footerAlign__direccion2">Buenos Aires/Argentina</p>
+            </footer>
+        </div>
+    </body>                                                                    
+</html>
