@@ -8,19 +8,20 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mukta:wght@200;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yellow Bikes</title> 
     </head>
 
-    <div class="container parallaxIndex">
+    <div class="container-fluid">
         <div class="navBar">
           <div class="logo">
             <a href="./index.html"><img src="img/yellowbikeslogo.png" alt="Yellow Bikes Logo" title="Yellow Bikes Logo Home" class="logoSize"></a>
           </div>
           <div class="menuDeNavegacion">
             <ul class="lista"> 
-                <li><a href="./index.html">Página Principal</a></li>
+                <li><a href="index.html">Página Principal</a></li>
                 <li><a href="./pages/categorias.html">Categorías</a></li>
                 <li><a href="./pages/dondeComprar.html">Dónde Comprar</a></li>
                 <li><a href="./pages/blog.html">Blog</a></li>
@@ -33,11 +34,8 @@
                 <input type="text" placeholder="  Buscar en el sitio" class="formInput">
                 <button class="button">Buscar</button>
             </form>  
-
           </div>
         </div>
-        <div class="paddingLeft"></div>
-
         <div class="banner">
             <img src="./img/banner1.jpg" class="imgBanner" alt="Mountain Bike Modelo X" title="Mountain Bike X">
         </div>
@@ -45,7 +43,7 @@
           <div class="tituloModelosDestacados">
             <h2 class="tituloModelosDestacados__texto">MODELOS DESTACADOS</h2> <!--no logro hacer que el titulo quede arriba de los cards-->
           </div>
-          <div class="cardsModelosDestacados">
+          <div class="cardsModelosDestacados column">
             <div class="modeloDestacado1">
                 <img src="./img/modeloV.png" alt="Yellow Bike Modelo V" title="Yellow Bike Modelo V" class="modelosDestacadosImg">
                 <p class="modelosDestacados__modelos">Modelo V: Nuestro modelo todo terreno</p>
