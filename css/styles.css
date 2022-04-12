@@ -60,8 +60,7 @@
   grid-auto-flow: row;
   grid-template-areas:
     "logo menuDeNavegacion busqueda";
-  grid-area: navBar;
-  position: sticky; /* Por que no funciona el sticky?*/
+  grid-area: navBar; 
   z-index: 1;
   background-color: #fce803;
   width: 100vw;
@@ -75,7 +74,6 @@
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
-    position: sticky; /* Por que no funciona el sticky?*/
     z-index: 1;
     background-color: #fce803;
     border-radius: 20px;
@@ -211,6 +209,7 @@ li:hover {
   align-items: center;
   justify-items: stretch;
 }
+
 
 @media screen and (max-width: 480px) {
   .banner { 
@@ -1324,14 +1323,15 @@ align-content: center;
 
 /*Aqui empieza el CSS para el dondeComprar*/
 
-.containerDondeComprar {  display: grid;
+.containerDondeComprar {  
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.4fr 3fr 0.2fr 0.4fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "nav"
+    "navBar"
     "mainDondeComprar"
     "irArriba"
     "footer";
