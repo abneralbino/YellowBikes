@@ -89,7 +89,6 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  width: 100%;
   height: auto;
 
 }
@@ -103,11 +102,18 @@
 
 @media screen and (max-width: 768px) {
   .logoSize {
-    height: 75px;
+    height: 15px;
     width: auto;
     position: relative;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+  navbar-brand {
+    width: 50%;
+    height: auto
+  }
 }
 
 .menuColor {
@@ -861,7 +867,7 @@ align-content: center;
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .containerCategorias {  
     display: grid;
     grid-template-columns: 1fr;
@@ -902,7 +908,7 @@ align-content: center;
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .categorias {  
     display: grid;
     grid-template-columns: 1fr 1fr;
